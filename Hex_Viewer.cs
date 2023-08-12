@@ -1,13 +1,7 @@
-using System;
+string filePath = args[0];
 
-class Program
+if (!File.Exists(filePath))
 {
-    static void Main(string[] args)
-    {
-        if (args.Length == 0)
-        {
-            Console.WriteLine("Please provide a file path.");
-            return;
-        }
-    }
+    Console.WriteLine("File does not exist.");
+    return;
 }
